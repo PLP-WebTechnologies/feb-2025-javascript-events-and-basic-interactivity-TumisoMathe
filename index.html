@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Interactive Playground!</h1>
+    </header>
+
+    <main>
+        <section id="event-handling">
+            <h2>Event Handling Fun!</h2>
+            <button id="clickButton">Click Me!</button>
+            <div id="hoverArea">Hover Over Me</div>
+            <input type="text" id="keypressInput" placeholder="Type Something Here">
+            <p id="keypressOutput"></p>
+            <button id="doubleClickButton">Double Click Me for a Surprise!</button>
+            <p id="doubleClickMessage" class="hidden">🎉 Surprise! You found me!</p>
+            <div id="longPressArea">Long Press Me!</div>
+            <p id="longPressMessage" class="hidden">⏳ That was a long press!</p>
+        </section>
+
+        <section id="interactive-elements">
+            <h2>Interactive Elements Galore!</h2>
+
+            <div id="textChanger">
+                <button id="changeTextButton">Change Text</button>
+                <p id="changingText">This is the initial text.</p>
+            </div>
+
+            <div id="colorChanger">
+                <button id="changeColorButton">Change Color</button>
+                <div id="coloredDiv"></div>
+            </div>
+
+            <div id="imageGallery">
+                <h3>Image Gallery</h3>
+                <div id="galleryContainer">
+                    <img id="galleryImage" src="https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?cs=srgb&dl=pexels-medhat-ayad-122846-383568.jpg&fm=jpg&_gl=1*uj5qoh*_ga*ODIyMDExOTIuMTc0MjE5NzkwOA..*_ga_8JE65Q40S6*MTc0NjIwNTY1NS44LjEuMTc0NjIwNTY3MS4wLjAuMA.." alt="Gallery Image">
+                    <div id="galleryControls">
+                        <button id="prevButton">&lt;</button>
+                        <button id="nextButton">&gt;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contentTabs">
+                <h3>Content Tabs</h3>
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-button" data-tab="tab2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-contents">
+                    <div id="tab1" class="tab-content active">Content for Tab 1</div>
+                    <div id="tab2" class="tab-content">Content for Tab 2</div>
+                    <div id="tab3" class="tab-content">Content for Tab 3</div>
+                </div>
+            </div>
+
+            <div id="animatedElement">
+                <h3>Animated Element</h3>
+                <div id="animateMe">Animate Me!</div>
+                <button id="startAnimation">Start Animation</button>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>Form Validation Station!</h2>
+            <form id="myForm">
+                <div>
+                    <label for="name">Name (Required):</label>
+                    <input type="text" id="name" required>
+                    <p class="error-message" id="nameError"></p>
+                </div>
+                <div>
+                    <label for="email">Email (Required):</label>
+                    <input type="email" id="email" required>
+                    <p class="error-message" id="emailError"></p>
+                </div>
+                <div>
+                    <label for="password">Password (Min 8 characters):</label>
+                    <input type="password" id="password" required>
+                    <p class="error-message" id="passwordError"></p>
+                </div>
+                <button type="submit">Submit</button>
+                <div id="formMessage" class="hidden"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Copy Right</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
